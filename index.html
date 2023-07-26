@@ -40,12 +40,12 @@
     </style>
   </head>
   <body class="font-lato">
-    <header class="max-w-[1440px] mx-auto px-10 xl:px-0">
+    <header class="max-w-[1440px] mx-auto px-5 xl:px-0">
       <!-- navbar  -->
       <div
-        class="navbar lg:bg-base-color rounded-[600px] lg:text-white mt-8 mb-14 px-7 lg:py-7 justify-between"
+        class="navbar lg:bg-base-color rounded-[600px] lg:text-white mt-8 mb-14 lg:py-7 justify-between"
       >
-        <div class="navbar-start hidden lg:flex">
+        <div class="navbar-start hidden lg:flex w-auto">
           <ul class="menu menu-horizontal px-1 text-lg font-medium">
             <li><a>Home</a></li>
             <li><a>About Us</a></li>
@@ -59,9 +59,18 @@
             <h1 class="font-bold text-2xl lg:text-[40px]">Fruit Burst</h1>
           </a>
         </div>
-        <div class="navbar-end">
+
+        <div class="pr-4">
+          <input
+            class="hidden lg:block xl:w-96 lg:w-72 h-14 rounded-[50px] py-5 pl-7 text-base"
+            type="text"
+            placeholder="Search here"
+            class="input input-bordered"
+          />
+        </div>
+        <div class="navbar-start lg:hidden w-auto">
           <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <label tabindex="0" class="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -79,20 +88,17 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box -ml-10"
             >
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
+              <li>
+                <a><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+              </li>
             </ul>
           </div>
-          <input
-            class="hidden lg:block xl:w-96 lg:w-72 h-14 rounded-[50px] py-5 pl-7 text-base"
-            type="text"
-            placeholder="Search here"
-            class="input input-bordered"
-          />
         </div>
       </div>
       <!-- banner section  -->
@@ -1075,4 +1081,8 @@
       <div></div>
     </footer>
   </body>
+  <script
+    src="https://kit.fontawesome.com/7e247639c6.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
